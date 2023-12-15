@@ -1,0 +1,35 @@
+.sponsor__cont{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 188px;
+        margin-bottom: 15px;
+    }
+}
+.cont__desc{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width:208px ;
+
+    h6{
+        font-size: 20px;
+        color: $color-primary;
+        text-transform: capitalize;
+
+        margin-bottom: 3px;
+    }
+    p{
+        font-family: $poppins;
+        color: $paragraph;
+        font-size: 14px;
+    }
+}

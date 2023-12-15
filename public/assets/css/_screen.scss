@@ -1,0 +1,219 @@
+@media screen and (max-width: 500px) {
+    header{
+        position: relative;
+        
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+        
+    }
+    
+    .navbar__nav{
+        
+        
+        ul{
+            display: block;
+            position: absolute;
+            justify-self: flex-end;
+            left: -230px;
+            top: 0;
+            background-color: $color-primary;
+            width: -100%;
+            height: 100vh;
+           li{
+            a{
+                padding: 20px;
+            }
+           }
+           
+        }
+    }
+
+    .active{
+        left: 230px;
+        width: 100%;
+    }
+    .banner{
+    margin-left: 20px;
+    h1{
+        font-size: 35px;
+    }
+    .banner__paragraph{
+        font-size: 15px;
+    }
+    .banner__btn{
+        a{
+            font: 12px;
+        }
+    }
+    .banner__rating{
+        margin-bottom: 20px;
+    }
+    
+    .banner-right{
+        img{
+            width: 350px;
+            height:  450px;
+            object-fit: cover;
+        }
+    }
+    }
+    .sub{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .book1-text{
+        padding: 10px;
+        margin-top: 10px;
+        h3{
+            font-size: 20px;
+        }
+    }
+    .book1{
+        img{
+            width: 220px;
+        }
+    }
+    .about{
+        flex-direction: column;
+        padding: 10px;
+        .about__image{
+            img{
+             height: 425px;
+            }
+         }
+            .about__text{
+                padding: 10px;
+                align-items: center;
+                justify-content: center;
+                p{
+                    font-size: 13px;
+                }
+            }
+            .about__sub{
+                h3{
+                    font-size: 30px;
+                }
+            }
+            .about__rating{
+                h4{
+                    font-size: 28px;
+                }
+            }
+            .generat{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+    }
+
+    .callout{
+        margin: auto;
+        padding-top: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        img{
+            width: 400px;
+        }
+    }
+    .avantage{
+        .avantage__img{
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 350px;
+                height:  350px;
+            }
+        }
+
+        .avantage__card{
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 570px) {
+    .banner{
+        margin-left: 20px;
+        h1{
+            font-size: 40px;
+        }
+        .banner__paragraph{
+            font-size: 15px;
+        }
+        .banner__btn{
+            a{
+                font: 12px;
+            }
+        }
+        .banner__rating{
+            margin-bottom: 20px;
+        }
+        
+        .banner-right{
+            img{
+                width: 350px;
+                height:  450px;
+                object-fit: cover;
+            }
+        }
+        }
+        .about{
+            .generat{
+                width: 200px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        .callout{
+            margin: auto;
+            padding-top: 20px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            img{
+                width: 400px;
+            }
+        }
+        .avantage{
+            .avantage__img{
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 350px;
+                    height:  350px;
+                }
+            }
+    
+            .avantage__card{
+                align-items: center;
+                justify-content: center;
+            }
+            .card{
+                margin-bottom: 20px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+}
+@media screen and (min-width: 875px) {
+    .autor__book{
+        flex-wrap: nowrap;
+    }
+    .about{
+        flex-wrap: nowrap;
+    }
+}
+
+

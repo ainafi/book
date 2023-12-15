@@ -1,0 +1,50 @@
+#article{
+    background-color: $gray;
+    
+}
+
+.article{
+    padding-top: 5rem;
+}
+
+.article-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 43px;
+
+}
+
+.article__card{
+    margin-left: 20px;
+    width: 320px;
+    img{
+        width: 310px;
+    }
+}
+.art-desc{
+    background-color: $white;
+    padding: 10px;
+
+    h4{
+        color: $color-primary;
+        font-family: $cardo;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-family: $poppins ;
+        font-weight: 400;
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        a{
+            text-decoration: underline;
+        }
+    }
+}

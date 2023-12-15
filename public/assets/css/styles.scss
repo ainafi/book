@@ -1,0 +1,33 @@
+@font-face {
+    font-family:'poppins' ;
+    src: url("../fonts/Poppins-Light.ttf");
+}
+@font-face {
+    font-family:'poppins-regular' ;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family:'cardo' ;
+    src: url('../fonts/Cardo-Regular.ttf');
+}
+@font-face {
+    font-family:'cardo-italic' ;
+    src: url("../fonts/Cardo-Italic.ttf");
+}
+
+@import 'variable.scss';
+@import 'global.scss';
+@import 'header.scss';
+@import 'banner.scss';
+@import 'book.scss';
+@import 'about.scss';
+@import 'sponsor.scss';
+@import 'callout.scss';
+@import 'avantage.scss';
+@import 'chapiter.scss';
+@import 'reader.scss';
+@import 'article.scss';
+@import 'form.scss';
+@import 'footer.scss';
+@import 'screen.scss';
+

@@ -1,0 +1,45 @@
+.avantage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.avantage__card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  
+}
+.avantage__img{
+    img{
+        height:650px ;
+    }
+}
+.card{
+    background-color: $gray;
+    width: 209px;
+    height: 209px;
+    margin-left: 20px;
+    padding: 10px;
+    .card__content{
+        padding: 25px;
+        h5{
+            background-color: $color-secondary;
+            color: $color-primary;
+            width: 20px;
+            height:20px;
+            border-radius: 100%;
+            padding: 5px;
+            margin-bottom: 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            color: $color-primary;
+            font-size: 18px;
+            font-weight: 500;
+            
+        }
+    }
+}

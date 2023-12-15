@@ -1,0 +1,24 @@
+#callout{
+    background-color: $color-primary;
+}
+.callout{
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    
+}
+
+.callout__text{
+    p{
+        color: $paragraph;
+        font-family: $poppins;
+        margin-bottom: 2rem;
+    }
+}
+
+.callout__img{
+    width: 300px;
+}
+
