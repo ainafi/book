@@ -135,3 +135,78 @@ function createCardArticle(){
     }
 }
 createCardArticle()
+
+
+// navbar responsive
+
+const hamburger=document.querySelector('.hamburger')
+const nav=document.querySelector('.nav')
+hamburger.addEventListener('click',()=>{
+    nav.classList.toggle('active')
+    console.log('hh');
+})
+
+// animation gsap
+TweenMax.from(".logo",{
+    opacity:0,
+    delay:.5,
+    x:-50,
+    
+})
+TweenMax.staggerFrom(".nav li a",1,{
+    opacity:0,
+    x:-50,
+    ease:Expo.easeInOut  
+},.66)
+TweenMax.from(".welcome",1,{
+    opacity:0,
+    y:20,
+    delay:.5,
+    ease:Expo.easeInOut  
+})
+TweenMax.from(".banner__title",1,{
+    opacity:0,
+    y:20,
+    delay:.9,
+    ease:Expo.easeInOut  
+})
+TweenMax.from(".banner__paragraph",1,{
+    opacity:0,
+    y:20,
+    delay:1,
+    ease:Expo.easeInOut  
+})
+TweenMax.from(".banner__btn",1,{
+    opacity:0,
+    y:20,
+    delay:1,
+    ease:Expo.easeInOut  
+})
+TweenMax.staggerFrom(".banner__rating h5",1,{
+    opacity:0,
+    y:20,
+    delay:1.2,
+    ease:Expo.easeInOut  
+},0.55)
+TweenMax.staggerFrom(".banner__rating .circle",1,{
+    opacity:0,
+    y:20,
+    delay:1.3,
+    ease:Expo.easeInOut  
+},0.55)
+TweenMax.staggerFrom(".banner__rating p",1,{
+    opacity:0,
+    y:20,
+    delay:1.3,
+    ease:Expo.easeInOut  
+},0.66)
+TweenMax.staggerFrom(".banner-right img",1,{
+    opacity:0,
+    x:-20,
+    delay:1.4,
+    ease:Power3.Out  
+},.99)
+
+
+
+

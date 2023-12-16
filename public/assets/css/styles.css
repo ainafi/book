@@ -426,8 +426,6 @@ header {
 
 .avantage {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .avantage__card {
@@ -710,22 +708,26 @@ footer {
     cursor: pointer;
     margin-right: 20px;
   }
-  .navbar__nav ul {
+  .navbar__nav {
+    position: relative;
+  }
+  .navbar__nav .nav {
+    width: 315px;
+    height: 50vh;
+    z-index: 9999;
+    background-color: rgb(3, 18, 66);
+    border-radius: 30px;
     display: block;
     position: absolute;
-    justify-self: flex-end;
-    left: -230px;
-    top: 0;
-    background-color: #1B3764;
-    width: -100%;
-    height: 100vh;
+    opacity: 0;
+    left: -251px;
+    top: 27px;
+    margin: auto;
+    transition: 1s ease;
   }
-  .navbar__nav ul li a {
-    padding: 20px;
-  }
-  .active {
-    left: 230px;
-    width: 100%;
+  .navbar__nav .nav li {
+    margin: 20px;
+    padding-left: auto;
   }
   .banner {
     margin-left: 20px;
@@ -801,8 +803,7 @@ footer {
     justify-content: center;
   }
   .avantage .avantage__img img {
-    width: 350px;
-    height: 350px;
+    display: none;
   }
   .avantage .avantage__card {
     align-items: center;
@@ -813,13 +814,16 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .nav.active {
+    opacity: 1;
+  }
 }
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 700px) {
   .banner {
     margin-left: 20px;
   }
   .banner h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .banner .banner__paragraph {
     font-size: 15px;
@@ -855,12 +859,11 @@ footer {
     justify-content: center;
   }
   .avantage .avantage__img img {
-    width: 350px;
+    width: 380px;
     height: 350px;
   }
   .avantage .avantage__card {
     align-items: center;
-    justify-content: center;
   }
   .avantage .card {
     margin-bottom: 20px;
@@ -868,7 +871,7 @@ footer {
     justify-content: center;
   }
 }
-@media screen and (min-width: 875px) {
+@media screen and (max-width: 875px) {
   .autor__book {
     flex-wrap: nowrap;
   }
