@@ -75,6 +75,24 @@ section {
   margin-top: 5.5rem;
 }
 
+.cursircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: fixed;
+  border: 2px solid #FFCA42;
+  cursor: none;
+}
+
+.grow {
+  z-index: 9999;
+  transform: scale(1);
+  background-color: yellow;
+  mix-blend-mode: difference;
+  border: none;
+  cursor: none;
+}
+
 header {
   background-color: #1B3764;
   width: 100%;
@@ -128,6 +146,10 @@ header {
   text-transform: capitalize;
   font-weight: 500;
   font-size: 15px;
+  transition: 0.5s ease;
+}
+.navbar__nav ul li a:hover {
+  color: #FFCA42;
 }
 
 .hamburger {

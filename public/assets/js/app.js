@@ -153,11 +153,6 @@ TweenMax.from(".logo",{
     x:-50,
     
 })
-TweenMax.staggerFrom(".nav li a",1,{
-    opacity:0,
-    x:-50,
-    ease:Expo.easeInOut  
-},.66)
 TweenMax.from(".welcome",1,{
     opacity:0,
     y:20,
@@ -208,5 +203,33 @@ TweenMax.staggerFrom(".banner-right img",1,{
 },.99)
 
 
+var cursor=document.querySelector('.cursircle')
+var cursors=document.querySelectorAll('header')
+var mouseX=0
+var mouseY=0
+
+gsap.to({},.004,{
+    repeat:-1,
+    onRepeat:()=>{
+        gsap.set(cursor,{
+            css:{
+                left:mouseX,
+                top:mouseY,
+            }
+        })
+    }
+})
+
+window.addEventListener('mousemove',(e)=>{
+    mouseX=e.clientX
+    mouseY=e.clientY
+})
 
 
+
+cursors.forEach(link => {
+    link.addEventListener('mouseenter',()=>{
+        cursor.classList.add('grow')
+    })
+    
+});
