@@ -14,6 +14,7 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
+    "imagesloaded": "^5.0.0",
     "sass": "^1.69.5"
   },
   "main": "main.js",

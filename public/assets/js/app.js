@@ -1,3 +1,4 @@
+
 import logo1 from '../images/Logo-1.png'
 import logo2 from '../images/Logo-2.png'
 import logo3 from '../images/Logo-3.png'
@@ -145,7 +146,16 @@ hamburger.addEventListener('click',()=>{
     nav.classList.toggle('active')
     console.log('hh');
 })
-
+// loader
+const content=document.querySelector('.loader')
+TweenMax.to(content,{
+    opacity:0,
+    delay:1.5,
+    ease:"power3.easeOut"
+})
+// setTimeout(() => {
+//     content.style.display='none'
+// }, 3000);
 // animation gsap
 TweenMax.from(".logo",{
     opacity:0,
@@ -204,7 +214,7 @@ TweenMax.staggerFrom(".banner-right img",1,{
 
 
 var cursor=document.querySelector('.cursircle')
-var cursors=document.querySelectorAll('header')
+var cursors=document.querySelectorAll('body')
 var mouseX=0
 var mouseY=0
 
