@@ -1,1 +1,13 @@
-https://book-aina.netlify.app/
+# book
+
+![book]https://i.postimg.cc/8crx1xQJ/book.png)
+
+#[Live site]([https://figmaland-aina.netlify.app/](https://book-aina.netlify.app/))
+
+###tech
+-html
+-scss
+-js
+
+Setup:
+- run ```npm i && npm run dev && npm run sass``` for both client and server side to start the app
